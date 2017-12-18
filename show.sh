@@ -12,10 +12,10 @@ displayFileCont() {
     if [ -f $file ]
     then
       if [ "$file" != $(basename $0) ]; then
-      echo "[$file]"
-      cat $file
-	    echo -e "\n\n"      
-	  fi
+        echo "[$file]"
+        cat $file
+        echo -e "\n\n"      
+      fi
     fi
   done
 }
@@ -60,7 +60,6 @@ displayFile() {
   hasDir
   if [ $? == 0 ]
   then
-    cd ..
     return
   fi
   
