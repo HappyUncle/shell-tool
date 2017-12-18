@@ -60,6 +60,7 @@ displayFile() {
   hasDir
   if [ $? == 0 ]
   then
+    cd ..
     return
   fi
   
